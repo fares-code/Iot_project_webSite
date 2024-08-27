@@ -1,0 +1,158 @@
+/* Alternative Beautiful Styling for Title */
+.title {
+  font-size: 3rem; /* Larger font size for prominence */
+  font-family: 'Montserrat', sans-serif; /* Modern and clean font */
+  font-weight: 700; /* Bold text */
+  color: #fff; /* White text color for contrast */
+  text-align: center; /* Center align the text */
+  margin-bottom: 1rem; /* Space below the title */
+  padding: 1rem 2rem; /* Add padding around the text */
+  background: linear-gradient(135deg, #ff6f61, #d65db1); /* Gradient background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative; /* For positioning pseudo-elements */
+  display: inline-block; /* Shrink-wrap the element */
+  overflow: hidden; 
+  opacity: 1;/* 
+  Hide overflow to maintain rounded corners */
+}
+
+/* Pseudo-element for background effect */
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  border-radius: 8px;
+  z-index: -1; /* Place behind the text */
+}
+
+/* Add animation for a subtle glowing effect */
+@keyframes glow {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0.0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+   
+    opacity: 0.5;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+  
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.title {
+  animation: glow 1.5s ease-in-out ; /* Glowing effect */
+}
+
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* To make sure the cards wrap if they exceed the width */
+  gap: 16px; /* Add space between the cards */
+}
+
+.card {
+  flex: 1 1 200px; /* Ensure the card has some basic width but can grow/shrink */
+  max-width: 300px; /* Optional: Restrict the max width of a card */
+  background-color: #1e1e1e; /* Dark background */
+  color: #f0f0f0; /* Light text color */
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.card-img-top {
+  width: 100%; /* Make the image fill the card's width */
+  height: 200px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensures the image covers the entire area without distorting */
+  border-radius: 12px 12px 0 0; /* Rounded corners on top */
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ff8c00; /* Accent color for title */
+}
+
+.card-text {
+  margin-bottom: 0.25rem;
+  color: #ccc; /* Slightly lighter text for descriptions */
+}
+
+/* Enhanced Loading Screen Styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+  color: #fff;
+  text-align: center;
+}
+
+.loading-spinner {
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  border-top: 8px solid #e67e22;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s ease-in-out infinite;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #5e9e11;
+font-style:italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

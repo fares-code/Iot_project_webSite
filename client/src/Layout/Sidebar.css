@@ -1,0 +1,50 @@
+/* Sidebar.css */
+
+.sidebar-container {
+  background: #121212; /* Dark background for dark mode */
+  border-right: 1px solid #333; /* Darker border for contrast */
+  color: #ffffff; /* White text color */
+  padding-bottom: 70px; /* Corrected typo from '70pxx' to '70px' */
+}
+
+.sidebar-brand {
+  color: #ffffff; /* White color for the sidebar brand */
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff; /* White color for links */
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Highlight color for active links */
+  color: #ffffff; /* White text color for active link */
+  border-radius: 0.25rem;
+}
+
+.nav-link:hover {
+  background-color: #333; /* Slightly darker background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border-color: #333; /* Darker border color for the horizontal rule */
+  margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100%;
+    position: static;
+  }
+}
+
+  
