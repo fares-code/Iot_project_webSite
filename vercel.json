@@ -1,20 +1,19 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "server.js", // Your Express server file
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/Routers/(.*)", // Assuming your API routes are prefixed with /api
-        "dest": "/server.js" // Directs to your Express server
-      },
-      {
-        "src": "/Routers/(.*)", // Catch-all route for everything else
-        "dest": "/server.js"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js", // Path to your Express server file
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)", // API routes start with /api
+      "dest": "/server.js" // Directs to your Express server
+    },
+    {
+      "src": "/(.*)", // Catch-all route for other static files or routes
+      "dest": "/server.js"
+    }
+  ]
+}
