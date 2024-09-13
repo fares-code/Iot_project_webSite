@@ -8,11 +8,11 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)", // API routes start with /api
-      "dest": "/server.js" // Directs to your Express server
+      "src": "/api/(.*)", 
+      "dest": "/server.js" 
     },
     {
-      "src": "/(.*)", // Catch-all route for other static files or routes
+      "src": "/(.*)", 
       "dest": "/server.js"
     }
   ]
