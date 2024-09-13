@@ -2,14 +2,18 @@
     "version": 2,
     "builds": [
       {
-        "src": "/server.js",    // This is where your Express server is located
-        "use": "@vercel/node"     // This tells Vercel to treat it as a Node.js serverless function
+        "src": "server.js", // Your Express server file
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/Routers(.*)",       // API routes start with /api
-        "dest": "/index.js"   // Directs to your Express server
+        "src": "/Routers/(.*)", // Assuming your API routes are prefixed with /api
+        "dest": "/server.js" // Directs to your Express server
+      },
+      {
+        "src": "/(.*)", // Catch-all route for everything else
+        "dest": "/server.js"
       }
     ]
   }
