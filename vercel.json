@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",   // Path to your Express server
+      "use": "@vercel/node" // Tells Vercel to treat it as a Node.js serverless function
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",       // Route all requests to the API
+      "dest": "server.js"   // Direct to your Express server
+    }
+  ]
+}
