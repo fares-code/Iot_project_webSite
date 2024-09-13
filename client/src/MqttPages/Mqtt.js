@@ -9,7 +9,7 @@ export default function MqttDataDisplay() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/v1/auth/message-broker');
+        const res = await axios.get('https://iot-project-web-site.vercel.app/message-broker');
         console.log('API Response:', res.data); // Log the full response to check the structure
         if (res.data && res.data.success) {
           setTimeout(() => {
