@@ -16,7 +16,7 @@ export default function PublishData() {
     };
 
     try {
-      const response = await axios.post('https://iot-project-web-site.vercel.app/send-mqtt-data', formData);
+      const response = await axios.post('https://iot-web-site-server.vercel.app/send-mqtt-data', formData);
       toast.success('Data sent successfully!');
       console.log('Data sent successfully:', response.data);
     } catch (error) {
