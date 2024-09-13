@@ -1,0 +1,306 @@
+*{
+ 
+  font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  
+}
+.main{
+  background-color: #2c2c2c;
+}
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+/* Home.css */
+
+/* Home.css */
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color:#2c2c2c; /* Fallback color in case the image doesn't load */
+  text-align: center; /* Centers the text horizontally */
+  color: #333; /* Adjust text color if needed */
+}
+
+
+/* Overall Layout */
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Header.css */
+
+.header-container {
+  background: #121212; /* Dark background for dark mode */
+  border-bottom: 1px solid #333; /* Darker border for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+}
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* White color for text */
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: 'Arial', sans-serif;
+  color: #cfcfcf; /* Light gray for links */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Highlight color for active links */
+  color: #ffffff; /* White text color for active link */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: #333; /* Slightly darker background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...'); /* Ensure the toggle icon is visible on dark background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+  }
+}
+
+/* Sidebar.css */
+
+.sidebar-container {
+  background: #121212; /* Dark background for dark mode */
+  border-right: 1px solid #333; /* Darker border for contrast */
+}
+
+.sidebar-brand {
+  color: #ffffff; /* White color for brand text */
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #cfcfcf; /* Light gray for links */
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Highlight color for active links */
+  color: #ffffff; /* White text color for active link */
+  border-radius: 0.25rem;
+}
+
+.nav-link:hover {
+  background-color: #333; /* Slightly darker background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border-color: #333; /* Darker border color for horizontal rules */
+  margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100%;
+    position: static;
+  }
+}
+
+/* AboutUs.css */
+
+
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 2rem auto;
+}
+
+.title {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 300px; /* Adjust based on your preference */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Login.css */
+
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/pngtree-exploring-the-world-of-iot-devices-and-connections-in-a-3d-image_3766496.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+
+.login-card {
+  
+  background: #fff;
+  border-radius: 8px;
+  width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* /* Register.css */
+.Img{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 330px;
+ gap: 25px;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  url("./images/pngtree-exploring-the-world-of-iot-devices-and-connections-in-a-3d-image_3766496.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333; /* Darker background color */
+}
+
+.login-card {
+  background-color: #1c1c1c; /* Darker card background color */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  color: #fff; /* Text color for better contrast */
+}
+
+.login-image {
+  width: 70%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bootstrap default color */
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Adjust form labels and inputs for dark theme */
+.form-label {
+  color: #ccc; /* Light color for labels */
+}
+
+.form-control {
+  background-color: #2c2c2c; /* Dark input background */
+  color: #fff; /* Light text color */
+  border: 1px solid #444; /* Slightly lighter border */
+}
+
+.form-control::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+/* CSS for Registration Text */
+.h5-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.h5-text {
+  font-size: 1.25rem; /* Adjust font size as needed */
+  color: #007bff; /* Primary color for text */
+  margin-bottom: 0;
+}
+
+.h5-text a {
+  color: #ff5733; /* Color for the link */
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold; /* Make the link text bold */
+}
+
+.h5-text a:hover {
+  text-decoration: underline; /* Underline on hover for better visibility */
+  color: #c70039; /* Slightly darker color on hover */
+}

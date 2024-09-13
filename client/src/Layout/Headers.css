@@ -1,0 +1,85 @@
+/* Header.css */
+
+.header-container {
+    background: #121212; /* Dark background for dark mode */
+    border-bottom: 1px solid #333; /* Darker border for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+  }
+  
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* White color for text */
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-family: 'Arial', sans-serif;
+    color: #cfcfcf; /* Light gray for links */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link.active {
+    background-color: #007bff; /* Highlight color for active links */
+    color: #ffffff; /* White text color for active link */
+    font-weight: bold;
+    border-radius: 30px;
+  }
+  
+  .nav-link:hover {
+    background-color: #333; /* Slightly darker background on hover */
+    color: #ffffff; /* White text color on hover */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...'); /* Ensure the toggle icon is visible on dark background */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  
+    .nav-link {
+      font-size: 0.875rem;
+    }
+  }
+  /* Styles for the dropdown menu */
+.custom-dropdown .dropdown-menu {
+  background-color: #333;
+  color: white;
+}
+
+.custom-dropdown .dropdown-item {
+  color: white;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: black;
+  color: wheat;
+}
+.navbar-toggler {
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+}
+
+/* Style for the toggler icon */
+.navbar-toggler-icon {
+  background-color: white; /* Background color for the icon */
+  border-radius: 4px; 
+  color: black;/* Optional: rounded corners for the icon */
+  padding: 6px; /* Optional: spacing around the icon */
+  display: inline-block; /* Ensure the icon is visible as a block */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-toggler-icon {
+    background-color: white; /* Ensure white color on smaller screens */
+  }
+}
