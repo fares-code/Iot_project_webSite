@@ -12,7 +12,7 @@
         "dest": "/server.js" // Directs to your Express server
       },
       {
-        "src": "/(.*)", // Catch-all route for everything else
+        "src": "/Routers/(.*)", // Catch-all route for everything else
         "dest": "/server.js"
       }
     ]
