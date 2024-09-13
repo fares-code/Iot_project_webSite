@@ -3,7 +3,7 @@ import Cookie from 'cookie-universal'
 const cookies = Cookie();
 const token =cookies.get("Iot_Project");
 export const Axios = axios.create({
-    baseURL:"https://iot-project-web-site.vercel.app",
+    baseURL:"https://iot-web-site-server.vercel.app",
 headers:{
     Authorization:token
 }
