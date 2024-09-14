@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './Headers.js';
 import Sidebar from './SideBar.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { ToastContainer } from 'react-toastify';
+import  { Toaster } from 'react-hot-toast';
 export default function Layout({ children }) {
   return (
     <>
@@ -16,7 +15,8 @@ export default function Layout({ children }) {
         {/* Main Content */}
         <main className="content-container main p-4" style={{ flexGrow: 1 }}>
           {children}
-          <ToastContainer/>
+                 <Toaster/>
+
         </main>
       </div>
     </>
