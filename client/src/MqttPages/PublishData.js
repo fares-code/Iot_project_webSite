@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 import { Slider, Switch, Spin  } from 'antd';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -101,7 +101,7 @@ export default function PublishData() {
           </div>
         </div>
       </form>
-      <ToastContainer />
+      <Toaster />
     </div>
   );
 }
