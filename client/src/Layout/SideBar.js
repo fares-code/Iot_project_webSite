@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar-container d-flex bg-black flex-column flex-shrink-0 p-3 vh-100">
       <NavLink to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-        <span className="fs-2 sidebar-brand">Chances</span>
+        <span className="fs-2 sidebar-brand">Options</span>
       </NavLink>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
